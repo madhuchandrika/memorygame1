@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Pacifico" rel="stylesheet">
+
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="game-css/game.css">
+</head>
+<body class="back">
+    <div class="container">
+        <header>
+            <!-- heading part with details and score -->
+            <h1>Matching Game</h1>
+        </header>
+        
+        <!-- The Score Panel -->
+        <section class="score-panel">
+            <ul class="stars">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+            </ul>
+
+            <span class="moves">0</span>
+            <span class="moves-color"> Moves</span>
+            <span class="timer">00:00</span>
+            
+
+            <div class="restart">
+                <i class="fa fa-repeat"></i>
+
+            </div>
+            
+        </section>
+        <!-- heading part completed ! -->
+
+        <!-- Main Game Panel -->
+        <ul class="deck">
+            <li class="card">
+                <i class="fa fa-area-chart"></i>
+            </li>
+
+            <li class="card">
+                <i class="fa fa-balance-scale"></i>
+            </li>
+
+            <li class="card">
+                <i class="fa fa-battery-1"></i>
+            </li>
+
+            <li class="card">
+                <i class="fa fa-bookmark-o"></i>
+            </li>
+
+            <li class="card">
+                <i class="fa fa-comments"></i>
+            </li>
+
+            <li class="card">
+                <i class="fa fa-battery-1"></i>
+            </li>
+
+            <li class="card">
+                <i class="fa fa-comments"></i>
+            </li>
+
+            <li class="card">
+                <i class="fa fa-bug"></i>
+            </li>
+
+            <li class="card">
+                <i class="fa fa-area-chart"></i>
+            </li>
+
+            <li class="card">
+                <i class="fa fa-envelope-o"></i>
+            </li>
+
+            <li class="card">
+                <i class="fa fa-check"></i>
+            </li>
+
+            <li class="card">
+                <i class="fa fa-check"></i>
+            </li>
+
+            <li class="card">
+                <i class="fa fa-bookmark-o"></i>
+            </li>
+
+            <li class="card">
+                <i class="  fa fa-bug"></i>
+            </li>
+
+            <li class="card">
+                <i class="fa fa-balance-scale"></i>
+            </li>
+
+            <li class="card">
+                <i class="fa fa-envelope-o"></i>
+            </li>
+        </ul>
+
+        <!-- The Win Modal text box completion -->
+        <div id="modal" class="modal-box">
+
+            <!-- Modal content -->
+            <div class="content-box">
+                <p>Congratulations! You Have Won the Game!</p>
+                <p>With <span class="moves">0</span> moves and getting <span class="num-stars">3</span> star(s)</p>
+                <p>You Did it in <span class="timer">0:00</span> minutes</p>
+
+                <button class="play-again"> Do You Want Play Again!</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game-js/jquery-3.3.1.min.js"></script>
+    <script src="game-js/game.js"></script>
+
+    
+</body>
+</html>
